@@ -1,0 +1,35 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas:
+    'header header'
+    /* 'head head head head head head head' */
+    'sidebar container';
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(34, 33, 33);
+  /* height: 50px; */
+}
+
+.sidebar {
+  grid-area: sidebar;
+  /* width: 50px;
+  height: 100%; */
+  background-color: rgb(66, 64, 64);
+}
+
+.container {
+  grid-area: container;
+  background-color: blueviolet;
+}
