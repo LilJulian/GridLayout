@@ -1,0 +1,22 @@
+@import url(/css/style.css);
+
+.grid-denso {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 150px);
+  grid-auto-flow: column;
+}
+
+/* .item:nth-child(9) {
+  background-color: brown;
+  color: white;
+  grid-rows: ;
+} */
+
+.item:nth-child(11) {
+  background-color: brown;
+  color: white;
+  /* grid-row: 2/2;
+  grid-column: 3/3; */
+
+}
